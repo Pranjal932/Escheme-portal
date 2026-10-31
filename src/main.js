@@ -218,7 +218,7 @@ const i18n = {
     news_3: '<strong>Post Matric Scholarship</strong> — 2026-27 applications open (NSP Portal)',
     news_4: '<strong>MGNREGA Registration</strong> — Open in all villages under ZP Nagpur',
     news_5: '<strong>Ayushman Bharat</strong> — New beneficiary list published. Download e-card.',
-    gov_maha: 'Government of Maharashtra', zp_nagpur: 'Zilla Parishad Nagpur', zp_portal_sub: 'Gram Panchayat E-Scheme Portal', tagline: 'Jai Jawan Jai Kisaan',
+    gov_maha: 'Government of Maharashtra', zp_nagpur: 'Gram-E-Scheme', zp_portal_sub: 'Gram Panchayat E-Scheme Portal', tagline: 'Jai Jawan Jai Kisaan',
     schemes_sub: 'All Central & State Government schemes under ZP Nagpur',
     contact_info_title: 'ZP Nagpur Contact Information', contact_tollfree: 'Toll-Free Helpline', contact_website: 'Official Website',
     contact_send_msg: 'Send a Message', contact_success: 'Message sent! We will contact you soon.',
