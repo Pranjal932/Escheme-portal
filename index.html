@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="जिल्हा परिषद नागपूर - ग्रामपंचायत ई-योजना पोर्टल - सर्व केंद्र व राज्य सरकारच्या योजना एकाच पोर्टलवर">
+    <meta name="keywords" content="ZP Nagpur, Gram Panchayat, E-Scheme Portal, Maharashtra Government, योजना, शिष्यवृत्ती">
+    <title>जिल्हा परिषद नागपूर | Gram Panchayat E-Scheme Portal | Maharashtra</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+
+    <!-- ===== TRICOLOR STRIP ===== -->
+    <div class="tricolor-strip">
+      <div class="saffron"></div>
+      <div class="white-strip"></div>
+      <div class="green-strip"></div>
+    </div>
+
+    <!-- ===== TOP UTILITY BAR ===== -->
+    <div class="top-utility-bar">
+      <div class="utility-inner">
+        <div class="utility-left">
+          <a href="#" class="skip-link" aria-label="Skip to main content">मुख्य मजकुराकडे जा</a>
+          <span class="screen-reader-info"><i class="fa-solid fa-universal-access"></i> अभिगम्यता</span>
+        </div>
+        <div class="utility-right">
+          <div class="font-size-controls">
+            <button id="font-decrease" aria-label="Decrease Font Size" class="util-btn" title="A-">A-</button>
+            <button id="font-reset" aria-label="Normal Font Size" class="util-btn" title="A">A</button>
+            <button id="font-increase" aria-label="Increase Font Size" class="util-btn" title="A+">A+</button>
+          </div>
+          <div class="divider-v"></div>
+          <button id="contrast-toggle" class="util-btn" title="High Contrast"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          <div class="divider-v"></div>
+          <select id="lang-switcher" class="lang-switcher-top" aria-label="Language">
+            <option value="mr" selected>मराठी</option>
+            <option value="hi">हिंदी</option>
+            <option value="en">English</option>
+          </select>
+          <div class="divider-v"></div>
+          <div class="helpline-top"><i class="fa-solid fa-headset"></i> सहाय्य: <strong>1800-120-8040</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== OFFICIAL GOVERNMENT HEADER ===== -->
+    <header class="gov-header" id="mainHeader">
+      <div class="gov-header-inner">
+        
+        <!-- India Emblem (Left) -->
+        <div class="header-emblem-section">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" 
+               alt="भारताचे राजचिन्ह" 
+               class="india-emblem"
+               onerror="this.style.display='none'">
+        </div>
+
+        <!-- Portal Title (Center) -->
+        <div class="header-title-section">
+          <p class="header-sub-title" data-i18n="gov_maha">महाराष्ट्र शासन</p>
+          <h1 class="header-main-title" data-i18n="zp_nagpur">जिल्हा परिषद नागपूर</h1>
+          <p class="header-sub-title2" data-i18n="zp_portal_sub">Zilla Parishad Nagpur • Gram Panchayat E-Scheme Portal</p>
+          <p class="header-tagline"><em data-i18n="tagline">जय जवान जय किसान | Jai Jawan Jai Kisaan</em></p>
+        </div>
+
+        <!-- Leaders Sticker (Right-Center) -->
+        <div class="header-sticker-section">
+          <img src="/src/assets/leaders-sticker.png" 
+               alt="Government Leadership" 
+               class="leaders-group-sticker"
+               onerror="this.style.display='none'">
+        </div>
+
+        <!-- ZP Nagpur Logo (Right) -->
+        <div class="header-zp-logo">
+          <div class="zp-logo-circle">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <div>
+            <p class="zp-logo-text">जि.प. नागपूर</p>
+            <p class="zp-logo-subtext">E-Portal</p>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ===== MAIN NAVIGATION ===== -->
+    <nav class="main-navbar" id="mainNav">
+      <div class="navbar-inner">
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> <span data-i18n="nav_home">मुख्यपृष्ठ</span></a></li>
+          <li><a href="#schemes" class="nav-link"><i class="fa-solid fa-layer-group"></i> <span data-i18n="nav_schemes">योजना</span></a></li>
+          <li><a href="#scholarships" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> <span data-i18n="cat_scholarship">शिष्यवृत्ती</span></a></li>
+          <li><a href="#verify" class="nav-link"><i class="fa-solid fa-id-card"></i> <span data-i18n="verify_docs">कागदपत्रे पडताळणी</span></a></li>
+          <li><a href="#eligibility" class="nav-link"><i class="fa-solid fa-user-check"></i> <span data-i18n="nav_check">पात्रता तपासा</span></a></li>
+          <li><a href="#documents" class="nav-link"><i class="fa-solid fa-file-shield"></i> <span data-i18n="nav_documents">कागदपत्रे</span></a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-phone-volume"></i> <span data-i18n="nav_contact">संपर्क</span></a></li>
+          <li><a href="#profile" class="nav-link profile-nav"><i class="fa-solid fa-id-card"></i> <span data-i18n="nav_profile">माझी प्रोफाईल</span></a></li>
+          <li><a href="#admin" class="nav-link admin-nav"><i class="fa-solid fa-user-shield"></i> <span data-i18n="nav_admin">प्रशासन</span></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== NOTICE TICKER ===== -->
+    <div class="notice-ticker">
+      <div class="ticker-label"><i class="fa-solid fa-bullhorn"></i> <span>नवीन घोषणा</span></div>
+      <div class="ticker-content">
+        <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+          🔴 <strong>मुख्यमंत्री माझी लाडकी बहीण योजना:</strong> पात्र महिलांना दरमहा ₹१,५०० डीबीटी द्वारे जमा सुरु &nbsp;|&nbsp; 
+          🔴 <strong>पीएम किसान १७ वा हप्ता:</strong> आधार सीडेड बँक खात्याची पडताळणी करा &nbsp;|&nbsp; 
+          🔴 <strong>राजर्षी शाहू महाराज शिष्यवृत्ती:</strong> OBC विद्यार्थ्यांसाठी अर्ज सुरु &nbsp;|&nbsp; 
+          🔴 <strong>पीएम आवास योजना:</strong> ग्रामीण लाभार्थी याद्या जाहीर &nbsp;|&nbsp;
+          🔴 <strong>जि.प. नागपूर:</strong> डिजिटल ग्राम पंचायत अभियान - ई-योजना नोंदणी सुरु &nbsp;|&nbsp;
+          🔴 <strong>Ayushman Bharat:</strong> ₹5 लाख आरोग्य विमा - नवीन नोंदणी खुली
+        </marquee>
+      </div>
+    </div>
+
+    <!-- ===== AUTH MODAL ===== -->
+    <div id="auth-modal" class="modal-overlay hidden">
+      <div class="modal-content auth-card">
+        <div class="auth-header">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="India Emblem" style="height:50px; filter:brightness(0) saturate(100%) invert(14%) sepia(100%) saturate(800%) hue-rotate(200deg);"
+               onerror="this.style.display='none'">
+          <h2 data-i18n="auth_title">ई-योजना पोर्टलवर आपले स्वागत आहे</h2>
+          <p data-i18n="auth_desc">कृपया तुमचा अनुभव सुधारण्यासाठी काही माहिती द्या. आम्ही हे फक्त एकदाच विचारतो.</p>
+        </div>
+        <form id="auth-form" class="auth-form">
+          <div class="form-group">
+            <label for="auth-name" data-i18n="auth_name">पूर्ण नाव / Full Name</label>
+            <input type="text" id="auth-name" required placeholder="तुमचे पूर्ण नाव लिहा">
+          </div>
+          <div class="form-group">
+            <label for="auth-mobile">मोबाईल नंबर / Mobile Number</label>
+            <input type="tel" id="auth-mobile" placeholder="10 अंकी मोबाईल नंबर" pattern="[0-9]{10}">
+          </div>
+          <div class="form-group">
+            <label for="auth-dob" data-i18n="auth_dob">जन्मतारीख / Date of Birth</label>
+            <input type="date" id="auth-dob" required>
+          </div>
+          <div class="input-group">
+            <label for="auth-village" data-i18n="auth_village">गाव / Village</label>
+            <input type="text" id="auth-village" placeholder="तुमच्या गावाचे नाव" data-i18n-placeholder="auth_village_ph">
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fa-solid fa-arrow-right"></i> <span data-i18n="auth_submit">पोर्टलवर जा / Proceed to Portal</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ===== SCHEME MODAL ===== -->
+    <div id="scheme-modal" class="modal-overlay hidden">
+      <div class="modal-content scheme-detail-card" id="scheme-detail-content"></div>
+    </div>
+
+    <!-- ===== DOCUMENT VERIFICATION MODAL ===== -->
+    <div id="verify-modal" class="modal-overlay hidden">
+      <div class="modal-content verify-card" id="verify-modal-content">
+        <div class="verify-header">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="India Emblem" style="height:40px;" onerror="this.style.display='none'">
+          <h3>📋 कागदपत्रे पडताळणी | Document Verification</h3>
+          <button class="close-btn modal-close-verify" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="verify-steps-content"></div>
+      </div>
+    </div>
+
+    <!-- ===== MAIN APP ===== -->
+    <div id="app" class="app-container">
+      <main id="main-content">
+        <!-- Dynamic content injected here -->
+      </main>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-col footer-about">
+            <div class="footer-logo">
+              <i class="fa-solid fa-building-columns"></i>
+              <div>
+                <span>जिल्हा परिषद नागपूर</span>
+                <small>Zilla Parishad Nagpur</small>
+              </div>
+            </div>
+            <p>महाराष्ट्र शासनाच्या जिल्हा परिषद नागपूरचे अधिकृत ई-योजना नागरिक पोर्टल. ग्रामीण समुदायांना सर्व केंद्र व राज्य सरकारच्या कल्याणकारी योजनांसाठी पारदर्शक व जलद डिजिटल प्रवेश.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4><i class="fa-solid fa-link"></i> द्रुत दुवे</h4>
+            <ul>
+              <li><a href="#schemes"><i class="fa-solid fa-chevron-right"></i> सर्व सरकारी योजना</a></li>
+              <li><a href="#scholarships"><i class="fa-solid fa-chevron-right"></i> ग्रामीण शिष्यवृत्ती</a></li>
+              <li><a href="#verify"><i class="fa-solid fa-chevron-right"></i> कागदपत्रे पडताळणी</a></li>
+              <li><a href="#eligibility"><i class="fa-solid fa-chevron-right"></i> पात्रता तपासणी</a></li>
+              <li><a href="#documents"><i class="fa-solid fa-chevron-right"></i> आवश्यक कागदपत्रे</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><i class="fa-solid fa-globe"></i> अधिकृत पोर्टल</h4>
+            <ul>
+              <li><a href="https://zpnagpur.maharashtra.gov.in" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> जि.प. नागपूर</a></li>
+              <li><a href="https://mahadbt.maharashtra.gov.in" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> MahaDBT पोर्टल</a></li>
+              <li><a href="https://scholarships.gov.in" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> National Scholarship Portal</a></li>
+              <li><a href="https://aaplesarkar.maharashtra.gov.in" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> आपले सरकार</a></li>
+              <li><a href="https://pmkisan.gov.in" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> PM Kisan Portal</a></li>
+              <li><a href="https://india.gov.in" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> National Portal of India</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4><i class="fa-solid fa-phone"></i> संपर्क करा</h4>
+            <div class="footer-contact">
+              <p><i class="fa-solid fa-location-dot"></i> जिल्हा परिषद कार्यालय, नागपूर - 440001</p>
+              <p><i class="fa-solid fa-phone"></i> 0712-2562680</p>
+              <p><i class="fa-solid fa-headset"></i> टोल-फ्री: 1800-120-8040</p>
+              <p><i class="fa-solid fa-envelope"></i> ceo.nagpur@gmail.com</p>
+              <p><i class="fa-solid fa-clock"></i> सोम-शुक्र: सकाळी १०:०० - सायं. ५:३०</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-inner">
+            <p data-i18n="footer_text">© 2026 जिल्हा परिषद नागपूर • महाराष्ट्र शासन • सर्व हक्क राखीव.</p>
+            <div class="footer-bottom-links">
+              <a href="#" data-i18n="footer_privacy">गोपनीयता धोरण</a> |
+              <a href="#" data-i18n="footer_terms">अटी व शर्ती</a> |
+              <a href="#" data-i18n="footer_sitemap">साइटमॅप</a> |
+              <a href="#" data-i18n="footer_about">आमच्याबद्दल</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
